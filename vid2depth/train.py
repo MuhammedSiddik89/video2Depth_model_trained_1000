@@ -65,8 +65,8 @@ flags.DEFINE_string('pretrained_ckpt', None, 'Path to checkpoint with '
                     'pretrained weights.  Do not include .data* extension.')
 flags.DEFINE_string('checkpoint_dir', DEFAULT_CHECKPOINT_DIR,
                     'Directory to save model checkpoints.')
-flags.DEFINE_integer('train_steps', 200000, 'Number of training steps.')
-flags.DEFINE_integer('summary_freq', 100, 'Save summaries every N steps.')
+flags.DEFINE_integer('train_steps', 2000, 'Number of training steps.') #200000
+flags.DEFINE_integer('summary_freq', 5, 'Save summaries every N steps.') #100
 flags.DEFINE_bool('legacy_mode', False, 'Whether to limit losses to using only '
                   'the middle frame in sequence as the target frame.')
 FLAGS = flags.FLAGS
